@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul li {
+            position: relative;
+            /*如果此处是有相对定位 则下面使用z-index */
+            float: left;
+            list-style: none;
+            width: 150px;
+            height: 200px;
+            border: 1px solid pink;
+            margin-left: -1px;
+        }
+
+        ul li:hover {
+            /* position: relative; 如果父盒子也是相对定位，那可以使用z-index */
+            z-index: 1;
+            border: 1px solid blue;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+    </ul>
+</body>
+
+</html>

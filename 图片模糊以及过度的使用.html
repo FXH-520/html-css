@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            filter: blur(3px);
+        }
+        img:hover {
+            filter: blur(0);
+        }
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            transition: all 0.5s;
+        }
+        .box:hover {
+            width: 400px;
+            height: 400px;
+            background-color: #333;
+        }
+    </style>
+</head>
+<body>
+    <img src="images/xiaomi10.png" alt="">
+    <div class="box"></div>
+</body>
+</html>

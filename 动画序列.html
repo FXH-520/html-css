@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>动画</title>
+    <style>
+        /* from  to 可以换成 0% 100% */
+       /*  @keyframes move {
+            from {
+                transform: translate(0,0);
+            }
+            to {
+                transform: translate(1000px,0);
+            }
+        } */
+        @keyframes move {
+            0% {
+                transform: translate(0,0);
+            }
+            25% {
+                transform: translate(1000px,0);
+            }
+            50% {
+                transform: translate(1000px,500px);
+            }
+            75% {
+                transform: translate(0,500px);
+            }
+            100% {
+                transform: translate(0,0);
+            }
+        }
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: tomato;
+            animation-name: move;
+            /* 运动曲线
+            animation-timing-function: ease; */
+            /* 何时开始
+            animation-delay: 2s; */
+            /* 播放周期的时间 */
+            animation-duration: 5s;
+            /* 播放次数 */
+            animation-iteration-count:infinite;
+            /* 播放方向 逆向回去*/
+            animation-direction: alternate;
+            /* 动画结束后的状态 默认的是 backwards 回到起始状态  我们可以让他停在结束状态 forwards。
+            animation-fill-mode: forwards; */
+        }
+            
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
